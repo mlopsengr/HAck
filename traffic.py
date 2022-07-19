@@ -75,6 +75,11 @@ optimizer = optim.Adam(resnet50.parameters(), lr=0.001)
 
 #%%
 def train_and_valid(model, loss_function, optimizer, epochs):
+    loss_function = loss_function
+    optimizer = optimizer
+    model = model
+    epochs = epochs
+
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     history = []
     best_acc = 0.0
@@ -168,3 +173,13 @@ plt.savefig(dataset + '/accuracy_curve.png')
 plt.show()
 ##%%
 # %%
+
+import azureml.core
+from azureml.core import Workspace
+from azureml.core.authentication import AzureCliAuthentication
+from azureml.core.run import Run
+from azureml.core.webservice import AciWebservice, Webservice
+from azureml.core.image import Image
+
+# pickles the model to be uploaded to Azure
+torch.save(model, 'outputs/model.pkl')
