@@ -11,11 +11,11 @@ from azureml.core import (
 compute_name = 'hackcompute22'
 
 #Defines the name of experiment and environment
-experiment_name = 'my-experiment'
-environment_name = 'my-environment'
+experiment_name = 'Hack-experiment'
+environment_name = 'Hack-environment'
 
 #Defines name of model and where it is saved
-model_name = 'my-model'
+model_name = 'model.pkl'
 model_path = 'outputs/model.pkl'
 
 #Defines  directory to run the experiment from
