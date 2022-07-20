@@ -1,6 +1,6 @@
 # TRAFFIC SIGN CLASSIFICATION
 This project builds a machine learning model in python using a convolutional neural network
-for classification of 57 distinct traffic signs
+for classification of 57 distinct traffic signs. Each image is converted to a tensor withn Python script "traffic.py" to aid training.
 
 ## Data Preparation
 - The data for this project can be found on [data](https://www.kaggle.com/datasets/ahemateja19bec1025/traffic-sign-dataset-classification?resource=download&select=labels.csv). It contains
