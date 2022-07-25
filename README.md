@@ -7,7 +7,9 @@ The ML operations within this repo was inmplemented using Azure machine learning
 - Azure subscription
 - Owner or contributor access to the Azure subscription
 - Azure [DevOps account](https://dev.azure.com/)
-- Azure workspace with compute instance/cluster running within.
+- Create an Azure resource group
+- Azure workspace within that resource group
+- Create a compute instance/cluster running in [AML studio](https://ml.azure.com)
 
 
 ## Data Preparation
@@ -68,5 +70,7 @@ resource_group  = 'cloud-shell-storage-westeurope'
 workspace_name  = 'Hack_Workspace'
 ```
 
-- The Yml file, azure-pipelines.yml then runs this script, 'start_experiment.py'
+- The Yml file, [azure-pipelines.yml](https://github.com/tobsiee/HAck/blob/main/azure-pipelines.yml) then runs this script, 'start_experiment.py'
+- Within this file, the branch where the pipeline retrieves and runs within is specified - 'main'. In the long run, this could be changed. The python 3.9 version is also specified to be used and the Azure mnachine learning sdk is installed.
+-The pipeline file triggers the [experiment file](https://github.com/tobsiee/HAck/blob/main/start_experiment.py) to run thereby re-training the model in the [traffic.py](https://github.com/tobsiee/HAck/blob/main/traffic.py) script at intervals.
 
