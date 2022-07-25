@@ -18,7 +18,7 @@ The ML operations within this repo was inmplemented using Azure machine learning
 
 ## Python script
 - The traffic.py file contains the python code used to develop this model.
-- Within this script, the PyTorch framework is used
+- Within this script, the [PyTorch framework](https://pytorch.org/) is used. It is widely used framework for building and training neural networks
 ```python
     import torch as torch
 ```
