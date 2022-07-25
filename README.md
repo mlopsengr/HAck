@@ -18,7 +18,7 @@ The ML operations within this repo was inmplemented using Azure machine learning
 
 ## Python script
 - The traffic.py file contains the python code used to develop this model.
-- Within this script, the [PyTorch framework](https://pytorch.org/) is used. It is widely used framework for building and training neural networks
+- Within this script, the [PyTorch framework](https://pytorch.org/) is used. It is a widely used framework for building and training neural networks
 ```python
     import torch as torch
 ```
@@ -27,6 +27,11 @@ The ML operations within this repo was inmplemented using Azure machine learning
 ```python
     resnet50 = models.resnet50(pretrained=True)
 ```
+- For faster re-training of the model, support for NVIDIA GPU's is integrated within the [traffic.py](https://github.com/tobsiee/HAck/blob/main/traffic.py) script in line 71 as 
+```python
+resnet50 = resnet50.to('cuda:0')  for NVIDIA GPU
+```
+Note that it needs to be uncommented for it to function.
 - The Adam optimizer is used with this network and its learning rate is kept at a standard value of 0.001 but can be adjusted 
 ```python
 optimizer = optim.Adam(resnet50.parameters(), lr=0.001)
