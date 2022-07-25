@@ -38,7 +38,7 @@ exp = Experiment(workspace=ws, name=experiment_name)
 #Creates environment with the packages needed
 env = Environment(name=environment_name)
 
-for pip_package in ['numpy','pandas','install torch==1.8.1+cpu torchvision==0.9.1+cpu torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html', 'torch torchvision torchaudio', 'matplotlib']:
+for pip_package in ['numpy','pandas','install torch==1.8.1+cpu torchvision==0.9.1+cpu torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html', 'torch torchvision torchaudio', 'matplotlib','requirements.txt']:
     env.python.conda_dependencies.add_pip_package(pip_package)
 
 #Creates a run configuration to connect environment and compute
