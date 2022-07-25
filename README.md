@@ -3,10 +3,10 @@ This project builds a machine learning model in python using a convolutional neu
 for classification of 58 distinct traffic signs. Each image is converted to a tensor withn Python script "traffic.py" to aid training.
 
 ## Prerequisites
-The ML operations within this repo was inmplemented using Azure machine learning studio and Azure Devops. The followign prerequisites are required to make this repository work:
+The ML operations within this repo was inmplemented using Azure machine learning studio and Azure Devops. A more general approach is to implement the CI/CD with docker but due to technical issues at moment of creating this project, Azure DevOps was adopted. The following prerequisites are required to make this repository work:
 - Azure subscription
 - Owner or contributor access to the Azure subscription
-- Azure Devops account
+- Azure [DevOps account](https://dev.azure.com/)
 - Azure workspace with compute instance/cluster running within.
 
 
