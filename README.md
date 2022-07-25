@@ -23,7 +23,7 @@ The ML operations within this repo was inmplemented using Azure machine learning
     import torch as torch
 ```
 ## Neural network
-- A pretrained CNN, RESNET-50 is used to train the model via transfer learning - output size is adjusted to meet the number of classes intended for classification
+- A pretrained CNN, RESNET-50 is used to train the model via transfer learning - output size is adjusted to meet the number of classes intended for classification. It contains 50 layers as the name connotes; 48 Convolutional layers, 1 MaxPool and 1 Average Pool layer.
 ```python
     resnet50 = models.resnet50(pretrained=True)
 ```
