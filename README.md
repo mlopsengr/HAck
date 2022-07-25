@@ -11,7 +11,7 @@ The ML operations within this repo was inmplemented using Azure machine learning
 
 
 ## Data Preparation
-- The data for this project can be found on [data](https://www.kaggle.com/datasets/ahemateja19bec1025/traffic-sign-dataset-classification?resource=download&select=labels.csv). It contains
+- The [data](https://www.kaggle.com/datasets/ahemateja19bec1025/traffic-sign-dataset-classification?resource=download&select=labels.csv) for this project was downloaded from the Kaggle site. It contains
 57 distinct traffic signs resulting in 57 labels to be classified
 - The data in the DATA folder is split into two seperate folders, 'train' and 'val', holding 80% and 20% respectively, of the total set.
 - Folders 'train' and 'val' are then imported to the python script
