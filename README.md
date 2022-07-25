@@ -27,7 +27,7 @@ The ML operations within this repo was inmplemented using Azure machine learning
 ```python
     resnet50 = models.resnet50(pretrained=True)
 ```
-- For faster re-training of the model, support for NVIDIA GPU's is integrated within the [traffic.py](https://github.com/tobsiee/HAck/blob/main/traffic.py) script in line 71 as 
+- For faster re-training of the model, support for NVIDIA GPU's is integrated within the [traffic.py](https://github.com/tobsiee/HAck/blob/main/traffic.py) script in line 71 as: 
 ```python
 resnet50 = resnet50.to('cuda:0')  for NVIDIA GPU
 ```
