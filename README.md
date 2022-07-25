@@ -18,7 +18,8 @@ The ML operations within this repo was inmplemented using Azure machine learning
 
 ## Python script
 - The traffic.py file contains the python code used to develop this model.
-- The [requirements](https://github.com/tobsiee/HAck/blob/main/requirements.txt)for this file can be installed by:
+- The [requirements](https://github.com/tobsiee/HAck/blob/main/requirements.txt) 
+for this file can be installed by:
 ```python
 pip install requirements.txt
 ```
