@@ -23,7 +23,7 @@ for this file can be installed by:
 ```python
 pip install requirements.txt
 ```
-- Within this script, the [PyTorch framework](https://pytorch.org/) is used. It is a widely used framework for building and training neural networks
+- Within this script, the [PyTorch framework](https://pytorch.org/) is adopted. It is a widely utilised framework for building and training neural networks
 ```python
     import torch as torch
 ```
