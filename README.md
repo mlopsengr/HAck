@@ -2,6 +2,14 @@
 This project builds a machine learning model in python using a convolutional neural network
 for classification of 58 distinct traffic signs. Each image is converted to a tensor withn Python script "traffic.py" to aid training.
 
+## Prerequisites
+The ML operations within this repo was inmplemented using Azure machine learning studio and Azure Devops. The followign prerequisites are required to make this repository work:
+- Azure subscription
+- Owner or contributor access to the Azure subscription
+- Azure Devops account
+- Azure workspace with compute instance/cluster running within.
+
+
 ## Data Preparation
 - The data for this project can be found on [data](https://www.kaggle.com/datasets/ahemateja19bec1025/traffic-sign-dataset-classification?resource=download&select=labels.csv). It contains
 57 distinct traffic signs resulting in 57 labels to be classified
