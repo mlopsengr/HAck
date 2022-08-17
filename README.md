@@ -1,5 +1,5 @@
 # TRAFFIC SIGN CLASSIFICATION
-This project builds a machine learning model using the python language leveraging on a convolutional neural network for classification of 58 distinct traffic signs. Each image is converted to a tensor within Python script "traffic.py" to aid training.
+This project builds a machine learning model using the python language and leveraging on a convolutional neural network for classification of 58 distinct traffic signs. Each image is converted to a tensor within Python script "traffic.py" to aid training.
 
 ## Prerequisites
 The ML operations within this repo was implemented using Azure machine learning (AML) studio and Azure Devops. A more general approach is to implement the CI/CD with docker but due to technical issues during the creation of this project, Azure DevOps was adopted. The following prerequisites are required to make this repository work:
