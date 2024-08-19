@@ -11,31 +11,33 @@ trigger:
  # always: true
 
 # defines image to be used
-pool:
-  vmImage: ubuntu-latest
+jobs:
+- job: Install
+  pool:
+    vmImage: ubuntu-latest
 
-steps:
+  steps:
 
-# sets python version
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.9'
-  displayName: 'Setting Python version'
-  
-# Install the packages needed to run pipeline
-- script: |
-    pip install azureml-sdk
-  displayName: 'Install packages needed'
+  # sets python version
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.9'
+    displayName: 'Setting Python version'
+
+  # Install the packages needed to run pipeline
+  - script: |
+      pip install azureml-sdk
+    displayName: 'Install packages needed'
 
 
-#Runs the script which starts the experiment
-- task: AzureCLI@2
-  inputs:
-    azureSubscription: 
-    scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: 'Hack Partners/start_experiment.py'
-    addSpnToEnvironment: true
-  displayName: 'Run a one-line script'
+  #Runs the script which starts the experiment
+  - task: AzureCLI@2
+    inputs:
+      azureSubscription: 
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: 'Hack Partners/start_experiment.py'
+      addSpnToEnvironment: true
+    displayName: 'Run a one-line script'
 
 
