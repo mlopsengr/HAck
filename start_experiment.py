@@ -22,7 +22,7 @@ model_path = 'outputs/model.pkl'
 source_directory = '.'
 
 #Defines the entry script for the experiment
-script_path = 'Hack Partners/traffic.py'
+script_path = './traffic.py'
 
 #Defines the location of the machine learning workspace
 subscription_id = '4f67948b-2ff9-49ee-bf1f-90c32dc7545e'
