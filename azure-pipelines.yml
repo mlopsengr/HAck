@@ -36,7 +36,7 @@ jobs:
       azureSubscription: 
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
-      inlineScript: 'Hack Partners/start_experiment.py'
+      inlineScript: 'python start_experiment.py'
       addSpnToEnvironment: true
     displayName: 'Run a one-line script'
 
