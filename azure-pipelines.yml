@@ -33,7 +33,7 @@ jobs:
   #Runs the script which starts the experiment
   - task: AzureCLI@2
     inputs:
-      azureSubscription: 
+      azureSubscription: "mlops-connection"
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
       inlineScript: 'python start_experiment.py'
